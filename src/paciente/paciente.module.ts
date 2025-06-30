@@ -1,3 +1,4 @@
+// src/paciente/paciente.module.ts
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Paciente } from './entities/paciente.entity';
