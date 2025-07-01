@@ -24,6 +24,7 @@ export class PacienteService {
   findOne(id: number): Promise<Paciente | null> {
     return this.pacienteRepository.findOneBy({ paciente_id: id });
   }
+
   async update(id: number, dto: UpdatePacienteDto): Promise<Paciente> {
     await this.pacienteRepository.update(id, dto);
     const pacienteAtualizado = await this.findOne(id);

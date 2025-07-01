@@ -1,22 +1,22 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
 @Entity()
-export class Paciente {
+export class Medico {
   @PrimaryGeneratedColumn()
-  paciente_id: number;
+  medico_id: number;
 
   @Column()
-  paciente_nome: string;
+  medico_nome: string;
 
   @Column()
-  paciente_telefone: string;
+  medico_telefone: string;
 
   @Column()
-  paciente_email: string;
+  medico_email: string;
 
   @Column({ nullable: true })
-  paciente_diagnostico: string;
+  medico_especialidade: string;
 
   @Column({ nullable: true })
-  paciente_registro: string;
+  medico_crm: string;
 }
